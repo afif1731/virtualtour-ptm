@@ -8,7 +8,7 @@ export const mobileNavContainerVariant = {
 
 export const mobileNavListVariant = {
     hidden: { y: -200, height: 0, opacity: 0 },
-    show: { opacity: 1, height: "auto", y: 0 },
+    show: { opacity: 1, height: "auto", y: 0, transition: { duration: 0.3 } },
 };
 
 export const mobileNavExitProps = {

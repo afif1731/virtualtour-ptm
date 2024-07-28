@@ -9,7 +9,7 @@ export default function virtualtour() {
                     height='100%'
                     allow='fullscreen; accelerometer; gyroscope; magnetometer; vr; xr; xr-spatial-tracking; autoplay; camera; microphone'
                     allowFullScreen
-                    >
+            >
             </iframe>
         </div>
     )

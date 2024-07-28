@@ -11,7 +11,15 @@ export default function IndexPage() {
             <Virtualtour/>
           </div>
           <Navbar/>
-        </div>
+          <div className='absolute hidden md:block bottom-10 left-10 m-0 text-[12px]'>
+            <p className=' text-white'>MOJOKERTO, JAWA TIMUR</p>
+          </div>
+          <div className=' absolute hidden md:block hover:scale-105 duration-300 bottom-10 right-10 m-0'>
+              <a href='https://psb.ponpestekmajapahit.sch.id' target='_blank' rel='noopener noreferrer' className=' flex align-middle items-center bg-[#D9D9D9] bg-opacity-30 rounded-full py-1 px-3 border border-white'>
+                  <span className=' text-white'>APPLY NOW</span>
+              </a>
+          </div>
+      </div>
       </main>
     </Layout>
   )

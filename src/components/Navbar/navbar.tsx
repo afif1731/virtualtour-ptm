@@ -1,31 +1,25 @@
 import Image from 'next/image'
 import Logo from '../../assets/logo-ptm-9-sayap.png'
-import { TiChevronRightOutline } from "react-icons/ti";
 import { IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
     mobileNavContainerVariant,
-    mobileNavListVariant,
     mobileNavExitProps,
 } from '../../data/animation.config'
 
 const NavList = () => {
     return (
         <>
-            <ul className=' flex lg:flex-row flex-col items-center lg:gap-[3vw] md:gap-[4vw] gap-[6vw]'>
+            <ul className=' flex md:flex-row flex-col items-center md:gap-[2vw] lg:gap-[3vw] gap-[8vw]'>
                 <li><a href='#' className=' hover:text-yellow-300 duration-300'>ABOUT US</a></li>
-                <li><a href='#' className=' hover:text-yellow-300 duration-300'>AKADEMI</a></li>
-                <li><a href='#' className=' hover:text-yellow-300 duration-300'>FASILITAS</a></li>
-                <li><a href='#' className=' hover:text-yellow-300 duration-300'>BERITA PTM</a></li>
                 <li><a href='#' className=' hover:text-yellow-300 duration-300'>PROGRAM</a></li>
-                <li><a href='#' className=' hover:text-yellow-300 duration-300'>GALERI</a></li>
-                <li><a href='#' className=' hover:text-yellow-300 duration-300'>BIO</a></li>
-                <li className='block lg:hidden hover:scale-105 duration-300'>
-                    <a href='https://psb.ponpestekmajapahit.sch.id' target='_blank' rel='noopener noreferrer' className=' flex align-middle items-center bg-yellow-300 rounded-full p-1'>
-                        <span className=' text-black'>APPLY NOW</span>
-                        <TiChevronRightOutline className=' mx-1 bg-black rounded-full text-yellow-300 w-8 h-8' />
+                <li><a href='#' className=' hover:text-yellow-300 duration-300'>FASILITAS</a></li>
+                <li><a href='#' className=' hover:text-yellow-300 duration-300'>AKADEMIK</a></li>
+                <li className='block md:hidden hover:scale-105 duration-300 md:py-0 py-28'>
+                    <a href='https://psb.ponpestekmajapahit.sch.id' target='_blank' rel='noopener noreferrer' className=' flex align-middle items-center bg-[#D9D9D9] bg-opacity-30 rounded-full py-1 px-3 border border-white'>
+                        <span className=' text-white'>APPLY NOW</span>
                     </a>
                 </li>
             </ul>
@@ -41,22 +35,27 @@ export default function navbar() {
     };
 
     return (
-        <div className=' bg-gray-500 absolute min-w-full'>
-            <div className=' py-4 sm:py-2 px-10 mx-auto'>
+        <div className='bg-gradient-to-b from-black/80 md:from-transparent absolute min-w-full'>
+            <div className=' py-4 sm:py-2 md:px-10 px-5 mx-auto'>
                 <div className='flex justify-between items-center font-bold text-lg text-slate-100'>
-                    <div className=' hover:scale-105 duration-300'>
-                        <a href='/' className=' flex items-center'>
+                    <div className='flex flex-row hover:scale-105 duration-300 items-center'>
+                        <a href='/' className=' flex items-center md:size-[64px] size-[48px]'>
                             <Image src={Logo} alt='Logo' width={64} height={64}></Image>
                         </a>
+                        <div className=' flex flex-col px-3 lg:text-base text-sm'>
+                            <a href='/'>Pesantren</a>
+                            <a href='/'>Teknologi Majapahit</a>
+                        </div>
                     </div>
-                    <div className=' lg:static lg:block hidden bg-gray-500 lg:min-h-fit min-h-[60vh] left-0 top-[95%] lg:w-auto w-full py-3'>
+                    <div className=' md:static md:block hidden md:min-h-fit min-h-[60vh] left-0 top-[95%] md:w-auto w-full py-3'>
                         <NavList/>
                     </div>
-                    <div className=' lg:hidden hover:text-yellow-300 duration-300'>
+                    
+                    <div className=' md:hidden hover:text-yellow-300 duration-300'>
                         <button onClick={toogleBurger}>
                             {
                                 isOpen
-                                ? <IoCloseSharp className=' w-8 h-8' />
+                                ? <IoCloseSharp className=' w-8 h-8 hidden' />
                                 : <GiHamburgerMenu className=' w-8 h-8'/>
                             }
                         </button>
@@ -66,23 +65,30 @@ export default function navbar() {
                             isOpen && (
                                 <motion.div
                                     layout='position'
-                                    variants={mobileNavContainerVariant}
+                                    variants={mobileNavContainerVariant} {...mobileNavExitProps}
                                     initial='hidden'
                                     animate='show'
-                                    className=' lg:static absolute lg:hidden bg-gray-500 lg:min-h-fit min-h-[85vh] left-0 top-[100%] lg:w-auto w-full py-3'
+                                    className=' md:static absolute md:hidden bg-black bg-opacity-70 backdrop-blur-sm md:min-h-fit min-h-screen left-0 top-0 md:w-auto w-full py-5'
                                 >
-                                    <motion.div variants={mobileNavListVariant} {...mobileNavExitProps}>
+                                    <div className=' flex md:hidden hover:text-yellow-300 duration-300 justify-end px-5 py-2'>
+                                        <button onClick={toogleBurger}>
+                                            {
+                                                isOpen
+                                                ? <IoCloseSharp className=' w-8 h-8' />
+                                                : <GiHamburgerMenu className=' w-8 h-8'/>
+                                            }
+                                        </button>
+                                    </div>
+                                    <div className=' py-8'>
                                         <NavList/>
-                                    </motion.div>
+                                    </div>
                                 </motion.div>
                             )
                         }
                     </AnimatePresence>
-                    <div className=' hidden lg:block hover:scale-105 duration-300'>
-                        <a href='https://psb.ponpestekmajapahit.sch.id' target='_blank' rel='noopener noreferrer' className=' flex align-middle items-center bg-yellow-300 rounded-full p-1'>
-                            <span className=' text-black'>APPLY NOW</span>
-                            <TiChevronRightOutline className=' mx-1 bg-black rounded-full text-yellow-300 w-8 h-8' />
-                        </a>
+
+                    <div className=' hidden lg:block hover:scale-105 duration-300 w-[20%]'>
+                        <p></p>
                     </div>
                 </div>
             </div>
