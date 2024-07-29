@@ -13,13 +13,19 @@ const NavList = () => {
     return (
         <>
             <ul className=' flex md:flex-row flex-col items-center md:gap-[2vw] lg:gap-[3vw] gap-[8vw]'>
-                <li><a href='#' className=' hover:text-yellow-300 duration-300'>ABOUT US</a></li>
-                <li><a href='#' className=' hover:text-yellow-300 duration-300'>PROGRAM</a></li>
-                <li><a href='#' className=' hover:text-yellow-300 duration-300'>FASILITAS</a></li>
-                <li><a href='#' className=' hover:text-yellow-300 duration-300'>AKADEMIK</a></li>
+                {
+                    [
+                        ['/about', 'ABOUT US'],
+                        ['#', 'PROGRAM'],
+                        ['#', 'FASILITAS'],
+                        ['#', 'AKADEMIK']
+                    ].map(([href, title]) => (
+                        <li key={title}><a href={href} className='md:ptm-p2 ptm-p4 font-normal hover:text-yellow-300 duration-300'>{title}</a></li>
+                    ))
+                }
                 <li className='block md:hidden hover:scale-105 duration-300 md:py-0 py-28'>
                     <a href='https://psb.ponpestekmajapahit.sch.id' target='_blank' rel='noopener noreferrer' className=' flex align-middle items-center bg-[#D9D9D9] bg-opacity-30 rounded-full py-1 px-3 border border-white'>
-                        <span className=' text-white'>APPLY NOW</span>
+                        <span className=' text-white md:ptm-p3 ptm-p4 font-medium'>APPLY NOW</span>
                     </a>
                 </li>
             </ul>
@@ -37,12 +43,12 @@ export default function navbar() {
     return (
         <div className='bg-gradient-to-b from-black/80 md:from-transparent absolute min-w-full'>
             <div className=' py-4 sm:py-2 md:px-10 px-5 mx-auto'>
-                <div className='flex justify-between items-center font-bold text-lg text-slate-100'>
+                <div className='flex justify-between items-center text-slate-100'>
                     <div className='flex flex-row hover:scale-105 duration-300 items-center'>
                         <a href='/' className=' flex items-center md:size-[64px] size-[48px]'>
                             <Image src={Logo} alt='Logo' width={64} height={64}></Image>
                         </a>
-                        <div className=' flex flex-col px-3 lg:text-base text-sm'>
+                        <div className=' flex flex-col px-3 ptm-p2'>
                             <a href='/'>Pesantren</a>
                             <a href='/'>Teknologi Majapahit</a>
                         </div>

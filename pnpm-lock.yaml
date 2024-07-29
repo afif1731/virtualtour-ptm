@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@next/font':
+        specifier: ^14.2.5
+        version: 14.2.5(next@12.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       framer-motion:
         specifier: ^11.3.8
         version: 11.3.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -131,6 +134,11 @@ packages:
 
   '@next/eslint-plugin-next@12.3.4':
     resolution: {integrity: sha512-BFwj8ykJY+zc1/jWANsDprDIu2MgwPOIKxNVnrKvPs+f5TPegrVnem8uScND+1veT4B7F6VeqgaNLFW1Hzl9Og==}
+
+  '@next/font@14.2.5':
+    resolution: {integrity: sha512-e2f3M+tAuJPUyXwWtEPKlPfpPEKODiQvPjdxOWBZC+zgdGv18KfjTkEmopfkfpZ016yCvw5BmMPeuEU/uiDf9g==}
+    peerDependencies:
+      next: '*'
 
   '@next/swc-android-arm-eabi@12.3.4':
     resolution: {integrity: sha512-cM42Cw6V4Bz/2+j/xIzO8nK/Q3Ly+VSlZJTa1vHzsocJRYz8KT6MrreXaci2++SIZCF1rVRCDgAg5PpqRibdIA==}
@@ -1719,6 +1727,10 @@ snapshots:
   '@next/eslint-plugin-next@12.3.4':
     dependencies:
       glob: 7.1.7
+
+  '@next/font@14.2.5(next@12.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+    dependencies:
+      next: 12.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@next/swc-android-arm-eabi@12.3.4':
     optional: true
