@@ -16,9 +16,9 @@ const NavList = () => {
                 {
                     [
                         ['/about', 'ABOUT US'],
-                        ['#', 'PROGRAM'],
-                        ['#', 'FASILITAS'],
-                        ['#', 'AKADEMIK']
+                        ['/program', 'PROGRAM'],
+                        ['/fasilitas', 'FASILITAS'],
+                        ['/akademik', 'AKADEMIK']
                     ].map(([href, title]) => (
                         <li key={title}><a href={href} className='md:ptm-p2 ptm-p4 font-normal hover:text-yellow-300 duration-300'>{title}</a></li>
                     ))

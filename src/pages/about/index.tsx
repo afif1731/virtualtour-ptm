@@ -3,18 +3,44 @@ import Layout from '@/components/layout';
 import VideoProfile from '@/components/Virtualtour/video-profile';
 import { aboutPTMData, visiMisiPTMData, sejarahPTMData, manfaatPTMData } from '@/assets/ptm-data';
 import { IoArrowForward } from "react-icons/io5";
+import DynaminNav from '@/components/Navbar/dynamic_navbar';
+
+const idList = [
+    {
+        name: 'profile',
+        href: 'profile'
+    },
+    {
+        name: 'visi-misi',
+        href: 'visi-misi'
+    },
+    {
+        name: 'sejarah',
+        href: 'sejarah'
+    },
+    {
+        name: 'keunggulan',
+        href: 'keunggulan'
+    }
+]
 
 const AboutPage = () => {
     return (
-        <Layout title='About Us | Pesantren Teknologi Majapahit'>
+        <Layout title='About Us'>
+            <header>
+                <DynaminNav
+                title='About Us'
+                items={idList}
+                />
+            </header>
             <main className=' min-h-screen h-auto'>
-                <div id='profile' className='px-[5%] lg:min-h-screen'>
-                    <div className=' pt-32 pb-10'>
-                        <h1 className=' ptm-h1 text-center px-[20%]'>About Pesantren Teknologi Majapahit</h1>
+                <div id={idList[0].href} className='px-[5%] lg:min-h-screen'>
+                    <div className=' md:pt-28 pt-24 pb-10'>
+                        <h1 className=' ptm-h1 text-center md:px-[20%] px-[6%]'>About Pesantren Teknologi Majapahit</h1>
                     </div>
-                    <div className='flex flex-col-reverse lg:flex-row lg:gap-10 gap-5 justify-evenly'>
+                    <div className='flex flex-col-reverse lg:flex-row lg:gap-10 gap-5 justify-evenly lg:px-0 px-[10%]'>
                         <div className=' flex flex-col lg:w-[40%] w-full'>
-                            <div className=' lg:flex hidden flex-col w-[90%]'>
+                            <div className=' lg:flex hidden flex-col lg:w-[90%]'>
                                 <h3 className='ptm-h3'>Pesantren</h3>
                                 <h3 className='ptm-h3'>Teknologi Majapahit</h3>
                             </div>
@@ -26,19 +52,19 @@ const AboutPage = () => {
                     </div>
                 </div>
 
-                <div id='visi-misi' className='bg-[url(/about_visimisi_bg.jpg)] bg-cover bg-[length: 2048px]'>
-                    <div className='bg-black/30 px-[10%] pb-20 pt-32 grid sm:grid-cols-2 grid-cols-1 xl:gap-32 gap-20 xl:min-h-screen'>
-                        <div className='bg-white rounded-xl p-10 flex flex-col col-span-1 h-auto'>
+                <div id={idList[1].href} className='bg-[url(/about_visimisi_bg.jpg)] bg-cover bg-[length: 2048px]'>
+                    <div className='bg-black/30 px-[10%] pb-20 pt-32 grid sm:grid-cols-2 grid-cols-1 xl:gap-32 gap-10 xl:min-h-screen'>
+                        <div className='bg-white rounded-xl p-8 flex flex-col col-span-1 h-auto'>
                             <h2 className=' ptm-h2'>Visi</h2>
-                            <p className=' ptm-p'>{visiMisiPTMData.visi}</p>
+                            <p className=' ptm-p3 pt-5'>{visiMisiPTMData.visi}</p>
                         </div>
-                        <div className='bg-white rounded-xl p-10 flex flex-col col-span-1 h-auto'>
+                        <div className='bg-white rounded-xl p-8 flex flex-col col-span-1 h-auto'>
                             <h2 className=' ptm-h2'>Misi</h2>
-                            <ul className=' list-decimal lg:pl-10 pl-5'>
+                            <ul className=' list-decimal lg:pl-10 pl-5 pt-5'>
                                 {
                                     visiMisiPTMData.misi.map((buf) => {
                                         return (
-                                            <li key={buf} className=' ptm-p'>{buf}</li>
+                                            <li key={buf} className=' ptm-p3'>{buf}</li>
                                         )
                                     })
                                 }
@@ -47,7 +73,7 @@ const AboutPage = () => {
                     </div>
                 </div>
 
-                <div className='px-[5%] pt-20 relative'>
+                <div id={idList[2].href} className='px-[5%] pt-10 relative'>
                         <h1 className=' ptm-h1 pt-20 pb-10'>Sejarah Pesantren Teknologi Majapahit</h1>
                         <ul className=' py-5 gap-5 pl-[4%] pr-[3%] list-disc'>
                             {
@@ -59,10 +85,10 @@ const AboutPage = () => {
                             }
                         </ul>
                 </div>
-                <div className=' h-auto py-20 px-[5%] bg-[#DFDFDF] rounded-t-[3rem]'>
+                <div id={idList[3].href} className=' h-auto pt-24 pb-20 px-[5%] bg-[#DFDFDF] rounded-t-[3rem]'>
                     <div className=' text-center'>
                         <h1 className=' ptm-h1 px-[6%]'>Keunggulan dan Manfaat Pesantren Teknologi Majapahit</h1>
-                        <p className=' ptm-p px-[25%] pt-10'>Berikut adalah Keunggulan dan Manfaat jika Anda masuk Pesantren Teknologi Majapahit</p>
+                        <p className=' ptm-p4 md:px-[20%] px-[10%] pt-8'>Berikut adalah Keunggulan dan Manfaat jika Anda masuk Pesantren Teknologi Majapahit</p>
                     </div>
                     <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pt-10 items-center'>
                             {

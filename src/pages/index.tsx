@@ -4,7 +4,7 @@ import Virtualtour from '@/components/Virtualtour/virtualtour'
 
 export default function IndexPage() {
   return (
-    <Layout title="Virtual Tour PTM">
+    <Layout title="Virtual Tour">
       <main>
         <div className='min-h-screen'>
           <div>

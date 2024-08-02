@@ -7,7 +7,7 @@ import { PiTiktokLogo } from 'react-icons/pi';
 
 export default function Footer() {
     return (
-        <div className=' flex flex-col bottom-0 m-0 w-full bg-black text-white px-8 py-3'>
+        <div className=' flex flex-col bottom-0 m-0 w-full bg-black text-white px-8 pt-8 pb-3'>
             <div className='footer-upper-part flex flex-col w-full'>
                 <p className=' ptm-p2'>CONTACT US</p>
                 <div className='flex flex-row items-center py-5'>
