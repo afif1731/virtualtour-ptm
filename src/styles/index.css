@@ -10,7 +10,7 @@
         @apply lg:text-[65px] text-[27px] font-bold font-montserrat;
     }
     .ptm-h2 {
-        @apply lg:text-[48px] text-[18px] font-bold font-montserrat;
+        @apply md:text-[48px] text-[24px] font-bold font-montserrat;
     }
     .ptm-h3 {
         @apply text-[36px] font-bold font-montserrat;
@@ -28,7 +28,7 @@
         @apply md:text-[20px] text-[16px] font-normal font-montserrat;
     }
     .ptm-p4 {
-        @apply text-[24px] font-montserrat;
+        @apply md:text-[24px] text-[18px] font-montserrat;
     }
     .ptm-card-title {
         @apply lg:text-[24px] text-[24px] font-bold font-montserrat;

@@ -20,7 +20,7 @@ const NavList = () => {
                         ['/fasilitas', 'FASILITAS'],
                         ['/akademik', 'AKADEMIK']
                     ].map(([href, title]) => (
-                        <li key={title}><a href={href} className='md:ptm-p2 ptm-p4 font-normal hover:text-yellow-300 duration-300'>{title}</a></li>
+                        <li key={title}><a href={href} className='md:ptm-p2 ptm-p4 font-normal hover:text-yellow-300 duration-300 text-white'>{title}</a></li>
                     ))
                 }
                 <li className='block md:hidden hover:scale-105 duration-300 md:py-0 py-28'>
@@ -48,7 +48,7 @@ export default function navbar() {
                         <a href='/' className=' flex items-center md:size-[64px] size-[48px]'>
                             <Image src={Logo} alt='Logo' width={64} height={64}></Image>
                         </a>
-                        <div className=' flex flex-col px-3 ptm-p2'>
+                        <div className=' flex flex-col px-3 ptm-p2 text-white'>
                             <a href='/'>Pesantren</a>
                             <a href='/'>Teknologi Majapahit</a>
                         </div>
@@ -61,8 +61,8 @@ export default function navbar() {
                         <button onClick={toogleBurger}>
                             {
                                 isOpen
-                                ? <IoCloseSharp className=' w-8 h-8 hidden' />
-                                : <GiHamburgerMenu className=' w-8 h-8'/>
+                                ? <IoCloseSharp className=' w-8 h-8 hidden text-white' />
+                                : <GiHamburgerMenu className=' w-8 h-8 text-white'/>
                             }
                         </button>
                     </div>
@@ -80,8 +80,8 @@ export default function navbar() {
                                         <button onClick={toogleBurger}>
                                             {
                                                 isOpen
-                                                ? <IoCloseSharp className=' w-8 h-8' />
-                                                : <GiHamburgerMenu className=' w-8 h-8'/>
+                                                ? <IoCloseSharp className=' w-8 h-8 text-white' />
+                                                : <GiHamburgerMenu className=' w-8 h-8 text-white'/>
                                             }
                                         </button>
                                     </div>
