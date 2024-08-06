@@ -8,7 +8,7 @@ const ProgramPage = () => {
             <header className=' absolute top-0 w-full'>
                 <div className=' flex flex-row pt-10 pb-5 px-[5%] rounded-t-xl justify-between'>
                     <p className=' ptm-p3 text-black1'>Program</p>
-                    <a href='/' className=' ptm-p3 text-black1'>Kembali</a>
+                    <a href='/' className=' ptm-p3 text-black1 hover:underline duration-300'>Kembali</a>
                 </div>
             </header>
             <main>

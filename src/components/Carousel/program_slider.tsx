@@ -9,10 +9,12 @@ export default function ProgramSlider() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 5000,
+        autoplaySpeed: 0,
         cssEase: 'linear',
-        focusOnSelect: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        centerMode: true,
         responsive: [
             {
               breakpoint: 1440,
@@ -44,12 +46,12 @@ export default function ProgramSlider() {
                         return (
                             <div key={program.slug} className='relative px-3'>
                                 <img src={program.img_url} alt={program.slug} className=' w-full aspect-square object-cover object-center rounded-3xl'></img>
-                                <div className=' absolute bottom-0 py-10 px-14'>
+                                <div className=' absolute bottom-0 md:py-10 py-3 md:px-6 px-3'>
                                     <div className='flex flex-col gap-1'>
                                         <h3 className='ptm-h3 text-white'>{program.name}</h3>
-                                        <p className=' ptm-card-subtitle text-white pb-5'>{program.desc}</p>
+                                        <p className=' ptm-card-subtitle text-white md:pb-5 pb-3'>{program.desc}</p>
                                         <div className=' flex'>
-                                            <div className='flex flex-row gap-3 cursor-pointer bg-white/50 rounded-3xl px-3 py-1 border-2 border-white items-center text-white hover:scale-105'>
+                                            <div className='flex flex-row gap-3 cursor-pointer bg-white/50 rounded-3xl px-3 py-1 border-2 border-white items-center text-white hover:scale-105 duration-300'>
                                                 <p className='ptm-card-btn'>Read More</p>
                                                 <FaArrowRight />
                                             </div>

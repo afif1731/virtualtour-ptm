@@ -1,8 +1,10 @@
+'use client';
+
 export default function virtualtour() {
     return (
         <div>
             {/* virtual tour sample */}
-            <iframe src='https://storage.net-fs.com/hosting/2727323/484/index.htm'
+            <iframe src={process.env.VT_URI}
                     className='w-full h-full absolute'
                     name='virtualtour sample'
                     width='100%'

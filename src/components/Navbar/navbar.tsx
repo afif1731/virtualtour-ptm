@@ -45,8 +45,8 @@ export default function navbar() {
             <div className=' py-4 sm:py-2 md:px-10 px-5 mx-auto'>
                 <div className='flex justify-between items-center text-slate-100'>
                     <div className='flex flex-row hover:scale-105 duration-300 items-center'>
-                        <a href='/' className=' flex items-center md:size-[64px] size-[48px]'>
-                            <Image src={Logo} alt='Logo' width={64} height={64}></Image>
+                        <a href='/' className=' flex items-center md:size-[48px] size-[36px]'>
+                            <Image src={Logo} alt='Logo' width={48} height={48}></Image>
                         </a>
                         <div className=' flex flex-col px-3 ptm-p2 text-white'>
                             <a href='/'>Pesantren</a>

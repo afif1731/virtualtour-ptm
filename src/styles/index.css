@@ -13,10 +13,13 @@
         @apply md:text-[48px] text-[24px] font-bold font-montserrat;
     }
     .ptm-h3 {
-        @apply text-[36px] font-bold font-montserrat;
+        @apply md:text-[36px] text-[24px] font-bold font-montserrat;
     }
     .ptm-h4 {
         @apply text-[28px] font-bold font-montserrat;
+    }
+    .ptm-h5 {
+        @apply md:text-[27px] text-[24px] font-semibold font-montserrat;
     }
     .ptm-p {
         @apply lg:text-[24px] text-[18px] font-normal font-montserrat;
