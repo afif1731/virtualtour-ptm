@@ -1,14 +1,14 @@
-export default function virtualtour() {
+export default function virtualtour({src}: {src: string}) {
     return (
         <div>
             {/* virtual tour sample */}
-            <iframe src={process.env.VT_URI}
+            <iframe src={src}
                     className='w-full h-full absolute'
-                    name='virtualtour sample'
+                    title='PTM Virtual Tour'
+                    name='virtualtour iframe'
                     width='100%'
                     height='100%'
-                    allow='fullscreen; accelerometer; gyroscope; magnetometer; vr; xr; xr-spatial-tracking; autoplay; camera; microphone'
-                    allowFullScreen
+                    allow='fullscreen; accelerometer; gyroscope; magnetometer; xr-spatial-tracking; autoplay; camera; microphone'
             >
             </iframe>
         </div>

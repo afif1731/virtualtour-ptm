@@ -1,14 +1,32 @@
 import Layout from '@/components/layout'
 import Navbar from '@/components/Navbar/navbar'
 import Virtualtour from '@/components/Virtualtour/virtualtour'
+import { useState } from 'react'
 
 export default function IndexPage() {
+  const [vtStart, setVTStart] = useState(false);
+
+  const toogleVT = () => {
+    setVTStart(true);
+  }
+
+  const vtLink = process.env.NEXT_PUBLIC_VT_URI as string;
+  
   return (
     <Layout title="Virtual Tour">
       <main>
-        <div className='min-h-screen'>
+        <div className='h-screen bg-black'>
           <div>
-            <Virtualtour/>
+            {
+              !vtStart &&
+              <div className='bg-black absolute w-full h-full'>
+                <div className='flex flex-col h-full gap-5 justify-center items-center text-white'>
+                  <h4 className='ptm-h4'>Click to Start Virtual Tour</h4>
+                  <button onClick={toogleVT} className='bg-white/50 rounded-3xl py-1 px-3 border-white border-2 ptm-p3'>Start</button>
+                </div>
+              </div>
+            }
+            {vtStart && <Virtualtour src={vtLink}/>}
           </div>
           <Navbar/>
           <div className='absolute hidden md:block bottom-10 left-10 m-0'>

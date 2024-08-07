@@ -44,21 +44,23 @@ export default function navbar() {
         <div className='bg-gradient-to-b from-black/80 md:from-transparent absolute min-w-full'>
             <div className=' py-4 sm:py-2 md:px-10 px-5 mx-auto'>
                 <div className='flex justify-between items-center text-slate-100'>
-                    <div className='flex flex-row hover:scale-105 duration-300 items-center'>
-                        <a href='/' className=' flex items-center md:size-[48px] size-[36px]'>
-                            <Image src={Logo} alt='Logo' width={48} height={48}></Image>
-                        </a>
-                        <div className=' flex flex-col px-3 ptm-p2 text-white'>
-                            <a href='/'>Pesantren</a>
-                            <a href='/'>Teknologi Majapahit</a>
+                    <a className='flex' href='/'>
+                        <div className='flex flex-row hover:scale-105 duration-300 items-center'>
+                            <p className=' flex items-center md:size-[48px] size-[36px]'>
+                                <Image src={Logo} alt='Logo' width={48} height={48}></Image>
+                            </p>
+                            <div className=' flex flex-col px-3 ptm-p2 text-white'>
+                                <p>Pesantren</p>
+                                <p>Teknologi Majapahit</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <div className=' md:static md:block hidden md:min-h-fit min-h-[60vh] left-0 top-[95%] md:w-auto w-full py-3'>
                         <NavList/>
                     </div>
                     
                     <div className=' md:hidden hover:text-yellow-300 duration-300'>
-                        <button onClick={toogleBurger}>
+                        <button id='burger' onClick={toogleBurger}>
                             {
                                 isOpen
                                 ? <IoCloseSharp className=' w-8 h-8 hidden text-white' />

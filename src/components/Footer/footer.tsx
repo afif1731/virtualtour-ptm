@@ -37,16 +37,16 @@ export default function Footer() {
                     <p className='ptm-p3'>Folllow us</p>
                     <p className='ptm-p3'>on media sosial</p>
                     <div className=' flex flex-row lg:justify-end justify-start gap-5 py-3'>
-                        <a href={footerPTMData.social_media.facebook} className=' text-white' target='_blank' rel='noopener noreferrer'>
+                        <a href={footerPTMData.social_media.facebook} className=' text-white' target='_blank' rel='noopener noreferrer' aria-label='Facebook Pesantren Teknologi Majapahit'>
                             <FiFacebook className=' size-6' />
                         </a>
-                        <a href={footerPTMData.social_media.youtube} className=' text-white' target='_blank' rel='noopener noreferrer'>
+                        <a href={footerPTMData.social_media.youtube} className=' text-white' target='_blank' rel='noopener noreferrer' aria-label='Youtube Pesantren Teknologi Majapahit'>
                             <FiYoutube className=' size-6' />
                         </a>
-                        <a href={footerPTMData.social_media.wa} className=' text-white' target='_blank' rel='noopener noreferrer'>
+                        <a href={footerPTMData.social_media.wa} className=' text-white' target='_blank' rel='noopener noreferrer' aria-label='Whats App Pesantren Teknologi Majapahit'>
                             <IoLogoWhatsapp className=' size-6' />
                         </a>
-                        <a href={footerPTMData.social_media.tiktok} className=' text-white' target='_blank' rel='noopener noreferrer'>
+                        <a href={footerPTMData.social_media.tiktok} className=' text-white' target='_blank' rel='noopener noreferrer' aria-label='TiktokPesantren Teknologi Majapahit'>
                             <PiTiktokLogo className=' size-6' />
                         </a>
                     </div>
