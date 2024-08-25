@@ -37,7 +37,7 @@
         @apply lg:text-[24px] text-[24px] font-bold font-montserrat;
     }
     .ptm-card-subtitle {
-        @apply lg:text-[13px] text-[13px] font-normal font-montserrat;
+        @apply lg:text-[16px] text-[15px] font-normal font-montserrat;
     }
     .ptm-card-btn {
         @apply lg:text-[15px] text-[15px] font-medium font-montserrat;

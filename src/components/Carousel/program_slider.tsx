@@ -49,12 +49,12 @@ export default function ProgramSlider() {
                                 <div className=' absolute bottom-0 md:py-10 py-3 md:px-6 px-3'>
                                     <div className='flex flex-col gap-1'>
                                         <h3 className='ptm-h3 text-white'>{program.name}</h3>
-                                        <p className=' ptm-card-subtitle text-white md:pb-5 pb-3'>{program.desc}</p>
+                                        <p className=' ptm-card-subtitle text-white pb-1'>{program.desc}</p>
                                         <div className=' flex'>
-                                            <div className='flex flex-row gap-3 cursor-pointer bg-white/50 rounded-3xl px-3 py-1 border-2 border-white items-center text-white hover:scale-105 duration-300'>
+                                            <a href={program.href} target='_blank' rel='noopener noreferrer' className='flex flex-row gap-3 cursor-pointer bg-white/50 rounded-3xl px-3 py-1 border-2 border-white items-center text-white hover:scale-105 duration-300'>
                                                 <p className='ptm-card-btn'>Read More</p>
                                                 <FaArrowRight />
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

@@ -48,5 +48,44 @@ export const ptmAkademikData = {
             desc: 'lorem ipsum dolor sit amet',
             img: '/track_program.png'
         },
+        {
+            name: 'Seragam Siswa PTM',
+            href: 'seragam',
+            desc: 'kumpulan seragam siswa PTM',
+            img: '/shirt.png'
+        },
     ]
 }
+
+export const seragamData = [
+    {
+        title: 'Seragam Senin Selasa',
+        alt: 'senin selasa',
+        image: '/seragam/seragam-2.jpg'
+    },
+    {
+        title: 'Seragam Rabu',
+        alt: 'rabu',
+        image: '/seragam/seragam-1.jpg'
+    },
+    {
+        title: 'Seragam Kamis',
+        alt: 'kamis',
+        image: '/seragam/seragam-4.jpg'
+    },
+    {
+        title: 'Seragam Jumat',
+        alt: 'jumat',
+        image: '/seragam/seragam-5.jpg'
+    },
+    {
+        title: 'Seragam Pramuka',
+        alt: 'pramuka',
+        image: '/seragam/seragam-3.jpg'
+    },
+    {
+        title: 'Seragam Lab',
+        alt: 'lab',
+        image: '/seragam/seragam-6.jpg'
+    },
+]

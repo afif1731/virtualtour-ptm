@@ -2,32 +2,32 @@ export const ptmFasilitasData = {
     fasilitasList: [
         {
             name: 'Lerning Community',
-            href: 'learning_community',
-            desc: 'lorem ipsum dolor sit amet',
+            href: 'learning-community',
+            desc: 'PTM Learning Community',
             icon: '/learning_community.png'
         },
         {
             name: 'Laboratorium Virtual',
-            href: 'laboratorium_virtual',
-            desc: 'lorem ipsum dolor sit amet',
+            href: 'laboratorium-virtual',
+            desc: 'PTM Virtual Laboratory',
             icon: '/lab_virtual.png'
         },
         {
             name: 'Studio Multimedia',
-            href: 'studio_multimedia',
-            desc: 'lorem ipsum dolor sit amet',
+            href: 'studio-multimedia',
+            desc: 'PTM Multimedia Studio',
             icon: '/studio_multimedia.png'
         },
         {
             name: 'Cyber Lybrary',
-            href: 'cyber_library',
-            desc: 'lorem ipsum dolor sit amet',
+            href: 'cyber-library',
+            desc: 'PTM Cyber Library',
             icon: '/cyber_library.png'
         },
         {
             name: 'E-Konseling',
-            href: 'e_konseling',
-            desc: 'lorem ipsum dolor sit amet',
+            href: 'e-konseling',
+            desc: 'PTM E-Counseling',
             icon: '/e_koseling.png'
         },
     ]

@@ -1,9 +1,15 @@
+import React from 'react';
 import Footer from '@/components/Footer/footer';
 import Layout from '@/components/layout';
 import VideoProfile from '@/components/Virtualtour/video-profile';
 import { aboutPTMData, visiMisiPTMData, sejarahPTMData, manfaatPTMData } from '@/assets/ptm-data';
-import { IoArrowForward } from "react-icons/io5";
+import { IoArrowForward, IoCloseSharp } from 'react-icons/io5';
 import DynaminNav from '@/components/Navbar/dynamic_navbar';
+import {
+    Dialog,
+    DialogHeader,
+    DialogBody,
+  } from '@material-tailwind/react';
 
 const idList = [
     {
@@ -24,7 +30,29 @@ const idList = [
     }
 ]
 
+interface IKeunggulan {
+    title: string;
+    subtitle: string;
+    img_url: string;
+    detail: string;
+}
+
 const AboutPage = () => {
+    const offTopic: IKeunggulan = {
+        title: 'closed',
+        subtitle: '',
+        img_url: '',
+        detail: ''
+    }
+    const [dialogOpen, setDialogOpen] = React.useState(false);
+    const [keunggulanTopic, setKeunggulanTopic] = React.useState(offTopic);
+    
+    const handleDialog = (topic: IKeunggulan) => {
+        if(topic.title === 'closed' || !topic) setDialogOpen(false);
+        else setDialogOpen(true);
+        setKeunggulanTopic(topic);
+    };
+
     return (
         <Layout title='About Us'>
             <header>
@@ -94,7 +122,7 @@ const AboutPage = () => {
                             {
                                 manfaatPTMData.map((manfaat) => {
                                     return (
-                                        <button key={manfaat.title} className=' bg-cover bg-[length: 512px] bg-center rounded-2xl hover:scale-105 duration-300' style={{backgroundImage: `url(${manfaat.img_url})`}}>
+                                        <button onClick={() => handleDialog(manfaat)} key={manfaat.title} className=' bg-cover bg-[length: 512px] bg-center rounded-2xl hover:scale-105 duration-300' style={{backgroundImage: `url(${manfaat.img_url})`}}>
                                             <div className=' flex flex-col justify-end col-span-1 bg-black/30 w-full rounded-2xl aspect-square p-8 gap-5'>
                                                 <p className=' ptm-card-title text-white text-left'>{manfaat.title}</p>
                                                 <div className='flex'>
@@ -108,6 +136,37 @@ const AboutPage = () => {
                                     )
                                 })
                             }
+                    </div>
+                    <div>
+                        <Dialog
+                            open= {dialogOpen}
+                            size='lg'
+                            handler={handleDialog}
+                            className=' bg-cover bg-center min-h-[40vh] rounded-2xl'
+                            style={{backgroundImage: `url(${keunggulanTopic.img_url ?? ''})`}}
+                        >
+                            <div className=' bg-black/60 h-full min-h-[40vh] items-start rounded-2xl px-8'>
+                                <div className='flex flex-row justify-between items-start'>
+                                    <DialogHeader className='flex text-white w-[50%]'>
+                                        <p className='ptm-h2'>
+                                            {
+                                                keunggulanTopic.title
+                                            }
+                                        </p>
+                                    </DialogHeader>
+                                    <button onClick={() => handleDialog(offTopic)} className='p-5'>
+                                        <IoCloseSharp className=' text-white size-16' />
+                                    </button>
+                                </div>
+                                <DialogBody className=' text-white text-justify'>
+                                    <p className='ptm-p4'>
+                                        {
+                                            keunggulanTopic.detail
+                                        }
+                                    </p>
+                                </DialogBody>
+                            </div>
+                        </Dialog>
                     </div>
                 </div>
             </main>

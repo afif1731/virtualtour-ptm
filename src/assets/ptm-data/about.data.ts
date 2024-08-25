@@ -49,31 +49,37 @@ export const manfaatPTMData = [
     {
         title: 'Mempertahankan Tradisi Keagamaan',
         subtitle: 'Lorem Ipsum',
-        img_url: '/DSC08115.jpg'
+        img_url: '/DSC08115.jpg',
+        detail: 'Pesantren merupakan institusi pendidikan tradisional Islam yang telah ada sejak lama di Indonesia. Dengan menggabungkan teknologi informasi, Pesantren Teknologi Majapahit dapat mempertahankan tradisi keagamaan sambil mengikuti perkembangan zaman.'
     },
     {
         title: 'Meningkatkan Kualitas Pembelajaran',
         subtitle: 'Lorem Ipsum',
-        img_url: '/DSC08110.jpg'
+        img_url: '/DSC08110.jpg',
+        detail: 'Dengan menggunakan teknologi informasi, pembelajaran di Pesantren Teknologi Majapahit dapat menjadi lebih efektif dan efisien. Santri dapat menggunakan berbagai sumber belajar seperti video pembelajaran, e-book, dan program belajar interaktif.'
     },
     {
         title: 'Membuka Akses Terhadap Informasi',
         subtitle: 'Lorem Ipsum',
-        img_url: '/DSC_0721.jpg'
+        img_url: '/DSC_0721.jpg',
+        detail: 'Dengan akses internet yang luas, Pesantren Teknologi Majapahit dapat membuka akses terhadap informasi dan pengetahuan yang lebih luas bagi santri baik dari dalam maupun luar pesantren.'
     },
     {
         title: 'Menumbuhkan Kecakapan Digital',
         subtitle: 'Lorem Ipsum',
-        img_url: '/samuel-bourke.jpg'
+        img_url: '/samuel-bourke.jpg',
+        detail: 'Dalam era digital seperti sekarang ini, kemampuan teknologi menjadi sangat penting. Pesantren Teknologi Majapahit dapat membantu santri untuk mengembangkan kecakapan digital seperti mengoperasikan komputer, internet, dan software aplikasi yang diperlukan.'
     },
     {
         title: 'Mengembangkan Keterampilan Sosial',
         subtitle: 'Lorem Ipsum',
-        img_url: '/DSC08120.jpg'
+        img_url: '/DSC08120.jpg',
+        detail: 'Melalui Pesantren Teknologi Majapahit, santri dapat belajar bersama dengan teman-teman mereka dan mengembangkan keterampilan sosial seperti kerjasama tim, komunikasi, dan kepemimpinan.'
     },
     {
         title: 'Menyiapkan Santri Untuk Masa Depan',
         subtitle: 'Lorem Ipsum',
-        img_url: '/mufid-majnun.jpg'
+        img_url: '/mufid-majnun.jpg',
+        detail: 'Pesantren Teknologi Majapahit dapat membantu santri untuk mempersiapkan diri dalam menghadapi tantangan masa depan. Mereka dapat memperoleh pengetahuan dan keterampilan yang diperlukan untuk berkompetisi di era globalisasi dan digitalisasi saat ini.'
     }
 ]
