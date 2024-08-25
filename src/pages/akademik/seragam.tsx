@@ -5,7 +5,6 @@ import { Carousel } from '@material-tailwind/react';
 import { seragamData } from '@/assets/ptm-data';
 import {
     Dialog,
-    DialogHeader,
     DialogBody,
   } from '@material-tailwind/react';
 
