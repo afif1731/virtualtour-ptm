@@ -6,7 +6,7 @@ const LearningCommunityFacility = () => {
         <Layout title='E-Konseling'>
             <header className=' absolute top-0 w-full'>
                 <div className=' flex flex-row pt-10 pb-5 px-[5%] rounded-t-xl justify-between'>
-                    <p className=' ptm-p3 text-black1'>Fasilitas - E-Konseling</p>
+                    <p className=' ptm-p3 text-black w-[60%]'>Fasilitas - E-Konseling</p>
                     <a href='/fasilitas' className=' ptm-p3 text-black1 hover:underline'>Kembali</a>
                 </div>
             </header>

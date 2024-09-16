@@ -72,7 +72,7 @@ const AboutPage = () => {
                                 <h3 className='ptm-h3'>Pesantren</h3>
                                 <h3 className='ptm-h3'>Teknologi Majapahit</h3>
                             </div>
-                            <div className=' py-5'>
+                            <div className=' py-5 md:text-left text-center'>
                                 <p className=' ptm-p'>{aboutPTMData.message}</p>
                             </div>
                         </div>
@@ -83,11 +83,11 @@ const AboutPage = () => {
                 <div id={idList[1].href} className='bg-[url(/about_visimisi_bg.jpg)] bg-cover bg-[length: 2048px]'>
                     <div className='bg-black/30 px-[10%] pb-20 pt-32 grid sm:grid-cols-2 grid-cols-1 xl:gap-32 gap-10 xl:min-h-screen'>
                         <div className='bg-white rounded-xl p-8 flex flex-col col-span-1 h-auto'>
-                            <h2 className=' ptm-h2'>Visi</h2>
-                            <p className=' ptm-p3 pt-5'>{visiMisiPTMData.visi}</p>
+                            <h2 className=' ptm-h2 md:text-left text-center'>Visi</h2>
+                            <p className=' ptm-p3 pt-5 md:text-left text-center'>{visiMisiPTMData.visi}</p>
                         </div>
                         <div className='bg-white rounded-xl p-8 flex flex-col col-span-1 h-auto'>
-                            <h2 className=' ptm-h2'>Misi</h2>
+                            <h2 className=' ptm-h2 md:text-left text-center'>Misi</h2>
                             <ul className=' list-decimal lg:pl-10 pl-5 pt-5'>
                                 {
                                     visiMisiPTMData.misi.map((buf) => {
@@ -102,7 +102,7 @@ const AboutPage = () => {
                 </div>
 
                 <div id={idList[2].href} className='px-[5%] pt-10 relative'>
-                        <h1 className=' ptm-h1 pt-20 pb-10'>Sejarah Pesantren Teknologi Majapahit</h1>
+                        <h1 className=' ptm-h1 pt-20 pb-10 md:text-left text-center'>Sejarah Pesantren Teknologi Majapahit</h1>
                         <ul className=' py-5 gap-5 pl-[4%] pr-[3%] list-disc'>
                             {
                                 sejarahPTMData.map((buffa) => {
@@ -148,7 +148,7 @@ const AboutPage = () => {
                             <div className=' bg-black/60 h-full min-h-[40vh] items-start rounded-2xl px-8'>
                                 <div className='flex flex-row justify-between items-start'>
                                     <DialogHeader className='flex text-white w-[50%]'>
-                                        <p className='ptm-h2'>
+                                        <p className='lg:ptm-h2 ptm-h4'>
                                             {
                                                 keunggulanTopic.title
                                             }
@@ -158,7 +158,7 @@ const AboutPage = () => {
                                         <IoCloseSharp className=' text-white size-16' />
                                     </button>
                                 </div>
-                                <DialogBody className=' text-white text-justify'>
+                                <DialogBody className=' text-white text-left'>
                                     <p className='ptm-p4'>
                                         {
                                             keunggulanTopic.detail

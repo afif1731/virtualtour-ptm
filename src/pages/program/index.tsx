@@ -12,10 +12,10 @@ const ProgramPage = () => {
                 </div>
             </header>
             <main>
-                <div className=' min-h-screen md:h-auto h-screen pt-24 pb-5 px-[10%]'>
+                <div className=' min-h-screen md:h-auto h-screen pt-24 pb-5 px-[3%]'>
                     <h2 className=' ptm-h2 text-center lg:px-[20%] px-[3%] indent-1'>Program Pesantren Teknologi Majapahit</h2>
                     <p className=' ptm-p4 text-center lg:px-[25%] px-[3%] py-3'>Berikut adalah progam - progam di Pesantren Teknologi Majapahit yang dapat Anda nikmati. </p>
-                    <div className='flex flex-row justify-center lg:py-0 py-5'>
+                    <div className='flex justify-center items-center lg:py-0 py-5 h-auto'>
                         <ProgramSlider/>
                     </div>
                 </div>

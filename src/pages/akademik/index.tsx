@@ -22,8 +22,8 @@ const AkademikPage = () => {
                         {
                             ptmAkademikData.list.map((akademik) => {
                                 return (
-                                    <a className=' grid-cols-1 grid-rows-1' href={`akademik/${akademik.href}`}>
-                                        <div key={akademik.name} className=' bg-[#DFDFDF] w-full h-full rounded-2xl p-5 hover:scale-105 duration-200 cursor-pointer'>
+                                    <a key={akademik.name} className=' grid-cols-1 grid-rows-1' href={`akademik/${akademik.href}`}>
+                                        <div className=' bg-[#DFDFDF] w-full h-full rounded-2xl p-5 hover:scale-105 duration-200 cursor-pointer'>
                                             <div className='flex flex-row gap-3 items-center w-full h-full'>
                                                 <img src={akademik.img} alt={akademik.name} className=' size-[64px] text-black'></img>
                                                 <div className='flex flex-col text-left'>

@@ -5,7 +5,6 @@ import { Carousel } from '@material-tailwind/react';
 import { seragamData } from '@/assets/ptm-data';
 import {
     Dialog,
-    DialogBody,
   } from '@material-tailwind/react';
 
 interface ISeragam {
@@ -37,7 +36,7 @@ const SeragamAkademik = () => {
                     <a href='/akademik' className=' ptm-p3 text-black1 hover:underline'>Kembali</a>
                 </div>
             </header>
-            <main className=' w-full h-screen bg-white pt-24 pb-2 xl:px-[35%] px-[15%]'>
+            <main className=' w-full h-screen bg-white pt-24 pb-2 xl:px-[35%] px-[5%]'>
                 <Carousel
                     className='rounded-xl'
                     loop
@@ -74,15 +73,15 @@ const SeragamAkademik = () => {
                 </Carousel>
                 <Dialog
                     open={dialogOpen}
-                    size='md'
+                    size='sm'
                     handler={handleDialog}
-                    className=' w-full h-full rounded-none bg-black/10 flex justify-center items-center'
+                    className='rounded-2xl h-auto !min-w-0 !max-w-full !w-auto bg-black/30 flex justify-center items-center'
                 >
-                    <DialogBody className='flex justify-center items-center h-auto w-auto rounded-2xl'>
+                    <div className='flex h-full justify-center items-center'>
                         {
-                            <img src={seragamTopic.image} alt={seragamTopic.alt} className='rounded-2xl md:h-[90vh] md:w-auto w-screen bg-cover aspect-auto' />
+                            <img src={seragamTopic.image} alt={seragamTopic.alt} className='rounded-2xl flex object-contain bg-cover aspect-auto h-full' />
                         }
-                    </DialogBody>
+                    </div>
                 </Dialog>
             </main>
             <footer>

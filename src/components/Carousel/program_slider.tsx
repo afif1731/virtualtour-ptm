@@ -19,7 +19,7 @@ export default function ProgramSlider() {
             {
               breakpoint: 1440,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true
@@ -44,8 +44,8 @@ export default function ProgramSlider() {
                 {
                     programData.carousel.map((program) => {
                         return (
-                            <div key={program.slug} className='relative px-3'>
-                                <img src={program.img_url} alt={program.slug} className=' w-full aspect-square object-cover object-center rounded-3xl'></img>
+                            <div key={program.slug} className='relative px-1'>
+                                <img src={program.img_url} alt={program.slug} className=' w-full lg:aspect-square aspect-[3/4] object-cover object-center rounded-3xl'></img>
                                 <div className=' absolute bottom-0 md:py-10 py-3 md:px-6 px-3'>
                                     <div className='flex flex-col gap-1'>
                                         <h3 className='ptm-h3 text-white'>{program.name}</h3>

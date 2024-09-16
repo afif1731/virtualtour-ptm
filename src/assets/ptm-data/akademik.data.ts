@@ -3,49 +3,49 @@ export const ptmAkademikData = {
         {
             name: 'Program Studi',
             href: '#',
-            desc: 'lorem ipsum dolor sit amet',
+            desc: 'program studi PTM',
             img: '/pogram_studi.png'
         },
         {
             name: 'Panduan Akademik',
             href: '#',
-            desc: 'lorem ipsum dolor sit amet',
+            desc: 'panduan akademik PTM',
             img: '/panduan_akademik.png'
         },
         {
             name: 'Kalender Akademik',
             href: '#',
-            desc: 'lorem ipsum dolor sit amet',
+            desc: 'kalender akademik PTM',
             img: '/kalender_akademik.png'
         },
         {
             name: 'Panduan Pembelajaran Online',
             href: '#',
-            desc: 'lorem ipsum dolor sit amet',
+            desc: 'panduan pembelajaran online PTM',
             img: '/panduan_online.png'
         },
         {
             name: 'Sistem Pembelajaran Online',
             href: '#',
-            desc: 'lorem ipsum dolor sit amet',
+            desc: 'sistem pembelajaran online PTM',
             img: '/sistem_online.png'
         },
         {
             name: 'Sistem Informasi Akademik',
             href: '#',
-            desc: 'lorem ipsum dolor sit amet',
+            desc: 'sistem informasi akademik PTM',
             img: '/informasi_akademik.png'
         },
         {
             name: 'Digital Library',
             href: '#',
-            desc: 'lorem ipsum dolor sit amet',
+            desc: 'PTM digital library',
             img: '/digital_lib.png'
         },
         {
             name: 'Track Program',
             href: '#',
-            desc: 'lorem ipsum dolor sit amet',
+            desc: 'PTM track program',
             img: '/track_program.png'
         },
         {
