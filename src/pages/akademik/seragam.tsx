@@ -77,7 +77,7 @@ const SeragamAkademik = () => {
                     handler={handleDialog}
                     className='rounded-2xl h-auto !min-w-0 !max-w-full !w-auto bg-black/30 flex justify-center items-center'
                 >
-                    <div className='flex h-full justify-center items-center'>
+                    <div className='flex md:h-[95vh] h-full justify-center items-center'>
                         {
                             <img src={seragamTopic.image} alt={seragamTopic.alt} className='rounded-2xl flex object-contain bg-cover aspect-auto h-full' />
                         }
