@@ -16,10 +16,10 @@
         @apply md:text-[36px] text-[24px] font-bold font-montserrat;
     }
     .ptm-h4 {
-        @apply md:text-[28px] text-[16px] font-bold font-montserrat;
+        @apply lg:text-[28px] md:text-[18px] text-[16px] font-bold font-montserrat;
     }
     .ptm-h5 {
-        @apply md:text-[27px] text-[18px] font-semibold font-montserrat;
+        @apply lg:text-[24px] md:text-[16px] text-[14px] font-semibold font-montserrat;
     }
     .ptm-p {
         @apply lg:text-[24px] text-[18px] font-normal font-montserrat;
@@ -28,7 +28,7 @@
         @apply text-[15px] font-medium font-montserrat;
     }
     .ptm-p3 {
-        @apply md:text-[20px] text-[16px] font-normal font-montserrat;
+        @apply lg:text-[18px] text-[16px] font-normal font-montserrat;
     }
     .ptm-p4 {
         @apply md:text-[24px] text-[14px] font-montserrat;

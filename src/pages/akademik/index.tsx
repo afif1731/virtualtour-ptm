@@ -13,12 +13,12 @@ const AkademikPage = () => {
                     <a href='/' className=' ptm-p3 text-black1 hover:underline'>Kembali</a>
                 </div>
             </header>
-            <main className='w-full pt-24 pb-16 px-[5%]'>
-                <div className='akademik-part1 lg:h-screen h-auto flex flex-col gap-5 lg:mb-0 mb-5'>
+            <main className='w-full pt-24 pb-16 px-[3%]'>
+                <div className='akademik-part1 xl:h-screen h-auto flex flex-col gap-5 lg:mb-0 mb-5'>
                     <div className=' md:text-left text-center'>
                         <h1 className=' ptm-h1'>Akademik PTM</h1>
                     </div>
-                    <div className='w-full h-[68%] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:grid-rows-3 md:grid-rows-2 grid-rows-1 gap-5'>
+                    <div className='w-full h-[68%] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:grid-rows-3 md:grid-rows-2 grid-rows-1 gap-5 pb-5'>
                         {
                             ptmAkademikData.list.map((akademik) => {
                                 return (

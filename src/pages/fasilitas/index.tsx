@@ -12,7 +12,7 @@ const FacilityPage = () => {
                     <a href='/' className=' ptm-p3 text-black1 hover:underline'>Kembali</a>
                 </div>
             </header>
-            <main className=' w-full min-h-screen pt-28 pb-5 px-[5%]'>
+            <main className=' w-full min-h-screen pt-28 pb-5 lg:px-[5%] px-[3%]'>
                 <div className=' flex md:flex-row flex-col'>
                     <div className='flex flex-col md:w-[30%] md:text-left text-center md:gap-10 gap-5'>
                         <h2 className='ptm-h1 leading-tight'>Fasilitas Pesantren Teknologi Majapahit</h2>
